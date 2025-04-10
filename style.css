@@ -1,0 +1,32 @@
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    padding: 30px;
+}
+
+.logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
