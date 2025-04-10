@@ -36,4 +36,18 @@ function App() {
         <input type="date" name="visitDate" value={formData.visitDate} onChange={handleChange} required />
 
         <label>שעת ביקור:</label>
-        <input type="time" name="visitTime" value={formData
+        <input type="time" name="visitTime" value={formData.visitTime} onChange={handleChange} required />
+
+        <label>טלפון אורח:</label>
+        <input name="guestPhone" value={formData.guestPhone} onChange={handleChange} required />
+
+        <label>שם מלווה מהחברה:</label>
+        <input name="employeeName" value={formData.employeeName} onChange={handleChange} required />
+
+        <button type="submit" style={{ marginTop: '20px' }}>שלח הזמנה</button>
+      </form>
+    </div>
+  );
+}
+
+export default App;
