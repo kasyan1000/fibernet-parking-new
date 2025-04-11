@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>דשבורד ניהול</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo">
+    <button onclick="window.location.href='index.html'" class="logout-button">יציאה</button>
+  </header>
+
+  <main>
+    <h1>ניהול בקשות חניה</h1>
+    <table id="requestsTable">
+      <thead>
+        <tr>
+          <th>שם אורח</th>
+          <th>מספר רכב</th>
+          <th>תאריך</th>
+          <th>שעה</th>
+          <th>טלפון</th>
+          <th>מלווה</th>
+          <th>מייל</th>
+          <th>סטטוס</th>
+          <th>פעולה</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>יוסי כהן</td>
+          <td>1234567</td>
+          <td>2025-04-20</td>
+          <td>10:00</td>
+          <td>050-1234567</td>
+          <td>דני לוי</td>
+          <td>dani@fibernet.co.il</td>
+          <td class="status">ממתין</td>
+          <td>
+            <button onclick="approve(this)">אשר</button>
+            <button onclick="reject(this)">דחה</button>
+          </td>
+        </tr>
+        <tr>
+          <td>רות ישראלי</td>
+          <td>9876543</td>
+          <td>2025-04-21</td>
+          <td>12:00</td>
+          <td>052-7654321</td>
+          <td>נועה רז</td>
+          <td>noa@fibernet.co.il</td>
+          <td class="status">ממתין</td>
+          <td>
+            <button onclick="approve(this)">אשר</button>
+            <button onclick="reject(this)">דחה</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
