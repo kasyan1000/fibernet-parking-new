@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>דשבורד ניהול</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <h1>דשבורד ניהול - פייברנט</h1>
+
+    <div class="filters">
+        <label>סינון לפי תאריך:
+            <input type="date" id="filterDate">
+        </label>
+
+        <label>סינון לפי סטטוס:
+            <select id="filterStatus">
+                <option value="">הצג הכל</option>
+                <option value="pending">ממתין</option>
+                <option value="approved">מאושר</option>
+                <option value="rejected">נדחה</option>
+            </select>
+        </label>
+    </div>
+
+    <table id="requestsTable">
+        <thead>
+            <tr>
+                <th>שם האורח</th>
+                <th>מספר רכב</th>
+                <th>תאריך ביקור</th>
+                <th>שעה</th>
+                <th>טלפון</th>
+                <th>שם מלווה</th>
+                <th>מייל עובד</th>
+                <th>סטטוס</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>יוסי כהן</td>
+                <td>1234567</td>
+                <td>2025-04-20</td>
+                <td>10:00</td>
+                <td>050-1234567</td>
+                <td>דני לוי</td>
+                <td>dani@fibernet.co.il</td>
+                <td>ממתין</td>
+            </tr>
+            <tr>
+                <td>רות ישראלי</td>
+                <td>9876543</td>
+                <td>2025-04-21</td>
+                <td>12:00</td>
+                <td>052-7654321</td>
+                <td>נועה רז</td>
+                <td>noa@fibernet.co.il</td>
+                <td>מאושר</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
