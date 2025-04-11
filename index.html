@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>הזמנת חניה לאורחים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo" />
+    <h1>ברוך הבא למערכת הזמנת חניות אורחים של פייברנט</h1>
+    <form>
+        <label>שם האורח:</label>
+        <input type="text" required>
+
+        <label>מספר רכב:</label>
+        <input type="text" required>
+
+        <label>תאריך ביקור:</label>
+        <input type="date" required>
+        <small>dd/mm/yyyy</small>
+
+        <label>שעת ביקור:</label>
+        <input type="time" min="08:00" max="19:30" required>
+
+        <label>טלפון אורח:</label>
+        <input type="tel" required>
+
+        <label>שם מלווה מהחברה:</label>
+        <input type="text" required>
+
+        <button type="submit">שלח הזמנה</button>
+    </form>
+</body>
+</html>
