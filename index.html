@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>הזמנת חניה - פייברנט</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo" />
+        <button class="admin-login" onclick="showLoginPopup()">כניסת מנהל</button>
+    </header>
+    <main>
+        <section class="form-container">
+            <h1>הזמנת חניה לאורחים - פייברנט</h1>
+            <p>נא למלא את כל השדות להזמנת חניה</p>
+            <form>
+                <label>שם האורח:<input type="text" required></label>
+                <label>מספר רכב:<input type="text" required></label>
+                <label>תאריך ביקור:<input type="date" required></label>
+                <label>שעת התחלה:<input type="time" min="08:00" max="19:30" required></label>
+                <label>שעת סיום:<input type="time" min="08:00" max="19:30" required></label>
+                <label>טלפון אורח:<input type="tel" required></label>
+                <label>כתובת מייל עובד חברה (לקבלת תשובה):<input type="email" required></label>
+                <button type="submit">שלח הזמנה</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
