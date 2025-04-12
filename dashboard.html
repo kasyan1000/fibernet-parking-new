@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ניהול בקשות חניה</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="header">
+        <button onclick="location.href='index.html'" class="logout-btn">יציאה</button>
+        <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo">
+    </div>
+
+    <h1>ניהול בקשות חניה</h1>
+
+    <div class="filter-bar">
+        <input type="text" id="searchInput" placeholder="חפש לפי שם אורח / מספר רכב / טלפון" onkeyup="filterTable()">
+    </div>
+
+    <table id="requestTable">
+        <thead>
+            <tr>
+                <th>פעולה</th>
+                <th>סטטוס</th>
+                <th>מייל</th>
+                
+                <th>טלפון</th>
+                <th>שעה</th>
+                <th>תאריך</th>
+                <th>מספר רכב</th>
+                <th>שם אורח</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <button onclick="approve(this)">אשר</button>
+                    <button onclick="reject(this)">דחה</button>
+                </td>
+                <td>נדחה</td>
+                <td>dani@fibernet.co.il</td>
+                
+                <td>050-1234567</td>
+                <td>10:00</td>
+                <td>2025-04-20</td>
+                <td>1234567</td>
+                <td>יוסי כהן</td>
+            </tr>
+            <tr>
+                <td>
+                    <button onclick="approve(this)">אשר</button>
+                    <button onclick="reject(this)">דחה</button>
+                </td>
+                <td>מאושר</td>
+                <td>noa@fibernet.co.il</td>
+                
+                <td>052-7654321</td>
+                <td>12:00</td>
+                <td>2025-04-21</td>
+                <td>9876543</td>
+                <td>רות ישראלי</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
