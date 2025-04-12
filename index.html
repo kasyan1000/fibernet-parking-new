@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fibernet Guest Parking</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="fibernet-logo.png" alt="Fibernet Logo" style="height: 80px; margin: 20px auto; display: block;" />
+    <button id="adminBtn" style="position: absolute; top: 20px; right: 20px;">כניסת מנהל</button>
+  </header>
+
+  <main>
+    <!-- כאן יופיע תוכן טופס ההזמנה בעתיד -->
+    <h1 style="text-align:center;">ברוכים הבאים למערכת הזמנת חניה</h1>
+  </main>
+
+  <div id="login-popup" class="popup" style="display: none;">
+    <div class="popup-content">
+      <h2>כניסת מנהל</h2>
+      <input type="text" id="username" placeholder="שם משתמש" />
+      <input type="password" id="password" placeholder="סיסמה" />
+      <button onclick="login()">כניסה</button>
+      <button onclick="hideLoginPopup()">סגור</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
