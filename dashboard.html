@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <title>דשבורד ניהול</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <h1>דשבורד ניהול הזמנות חניה</h1>
+  <input type="text" id="searchInput" placeholder="חיפוש לפי שם/רכב/טלפון" />
+  <table id="parkingTable">
+    <thead>
+      <tr>
+        <th>מספר</th>
+        <th>שם אורח</th>
+        <th>מספר רכב</th>
+        <th>טלפון</th>
+        <th>תאריך</th>
+        <th>שעת התחלה</th>
+        <th>שעת סיום</th>
+        <th>מייל עובד</th>
+        <th class="status">סטטוס</th>
+        <th>פעולות</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="pending">
+        <td>1</td>
+        <td>אורח לדוגמה</td>
+        <td>1234567</td>
+        <td>0501234567</td>
+        <td>2025-04-15</td>
+        <td>09:00</td>
+        <td>11:00</td>
+        <td>employee@example.com</td>
+        <td class="status">ממתין</td>
+        <td>
+          <button class="approve-btn">אשר</button>
+          <button class="reject-btn">דחה</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <button class="export">ייצוא לאקסל</button>
+  <script src="dashboard.js"></script>
+</body>
+</html>
