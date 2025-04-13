@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>דשבורד ניהול</title>
+  <style>
+    body { font-family: Arial; direction: rtl; padding: 40px; background-color: #f9fbff; }
+    input { margin-bottom: 15px; width: 300px; padding: 8px; }
+    table { width: 100%; border-collapse: collapse; background: white; }
+    th, td { border: 1px solid #ccc; padding: 10px; text-align: center; }
+    .status-approved { background-color: #d4edda; }
+    .status-rejected { background-color: #f8d7da; }
+    .status-pending { background-color: #f1f1f1; }
+  </style>
+</head>
+<body>
+  <h2>דשבורד ניהול חניות</h2>
+  <input type="text" id="searchInput" placeholder="חפש לפי שם, טלפון או רכב..." onkeyup="searchTable()">
+
+  <table id="requestTable">
+    <thead>
+      <tr>
+        <th>שם האורח</th>
+        <th>מספר טלפון</th>
+        <th>מספר רכב</th>
+        <th>סטטוס</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="status-approved"><td>דני כהן</td><td>0501234567</td><td>1234567</td><td>מאושר</td></tr>
+      <tr class="status-rejected"><td>שרה לוי</td><td>0507654321</td><td>7654321</td><td>נדחה</td></tr>
+      <tr class="status-pending"><td>רות ישראלי</td><td>0523456789</td><td>2345678</td><td>ממתין</td></tr>
+    </tbody>
+  </table>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
