@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>הזמנת חניה - פייברנט</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <button class="admin-button" onclick="showLoginPopup()">כניסת מנהל</button>
+
+    <div class="form-container">
+        <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo" />
+        <h2>הזמנת חניה - פייברנט</h2>
+        <form id="reservationForm">
+            <label>שם האורח:<input type="text" name="guestName" required /></label>
+            <label>מספר רכב:<input type="text" name="carNumber" required /></label>
+            <label>תאריך ביקור:<input type="date" name="visitDate" required /></label>
+            <label>שעת התחלה:<input type="time" name="startTime" required /></label>
+            <label>שעת סיום:<input type="time" name="endTime" required /></label>
+            <label>טלפון אורח:<input type="tel" name="guestPhone" required /></label>
+            <label>מייל עובד חברה (לקבלת תשובה):<input type="email" name="employeeEmail" required /></label>
+            <button type="submit">שלח הזמנה</button>
+            <button type="button" onclick="addGuest()">הוסף אורח נוסף</button>
+        </form>
+    </div>
+
+    <div id="loginPopup" class="popup" style="display:none;">
+        <!-- תוכן הפופאפ -->
+        <div class="popup-content">
+            <h3>התחברות מנהל</h3>
+            <input type="text" id="adminUsername" placeholder="שם משתמש" />
+            <input type="password" id="adminPassword" placeholder="סיסמה" />
+            <button onclick="handleAdminLogin()">כניסה</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
