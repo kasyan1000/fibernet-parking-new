@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנת חניה לאורחים - פייברנט</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="fibernet-logo.png" alt="Fibernet Logo" class="logo">
+        <button id="admin-login-btn">כניסת מנהל</button>
+    </header>
+
+    <main>
+        <h1>ברוכים הבאים למערכת הזמנת חניה</h1>
+        <form id="reservation-form">
+            <label for="guestName">שם האורח:</label>
+            <input type="text" id="guestName" name="guestName" required>
+
+            <label for="carNumber">מספר רכב:</label>
+            <input type="text" id="carNumber" name="carNumber" required>
+
+            <label for="visitDate">תאריך ביקור:</label>
+            <input type="date" id="visitDate" name="visitDate" required>
+
+            <label for="startTime">שעת התחלה:</label>
+            <input type="time" id="startTime" name="startTime" required>
+
+            <label for="endTime">שעת סיום:</label>
+            <input type="time" id="endTime" name="endTime" required>
+
+            <label for="phone">טלפון אורח:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">כתובת מייל עובד החברה (לקבלת תשובה):</label>
+            <input type="email" id="email" name="email" required>
+
+            <button 
+<div id="guests-container"></div>
+<button id="add-guest-btn" type="button">➕ הוסף מבקר נוסף</button>
+<p id="guest-limit-msg" style="color: red; display: none; margin-top: 10px;">
+  ניתן להזמין עד 3 מבקרים בלבד. להזמנה נוספת, יש לפנות לקב"ט.
+</p>
+
+type="submit">שלח הזמנה</button>
+        </form>
+    </main>
+
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" id="closePopup">&times;</span>
+            <h2>כניסת מנהל</h2>
+            <label for="username">שם משתמש:</label>
+            <input type="text" id="username">
+            <label for="password">סיסמה:</label>
+            <input type="password" id="password">
+            <button onclick="validateLogin()">התחבר</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
