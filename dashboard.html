@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>דשבורד ניהול חניות</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>דשבורד ניהול הזמנות חניה</h1>
+        <button onclick="logout()" style="background-color: #e53e3e; color: white; border: none; padding: 10px 20px; border-radius: 6px; font-weight: bold; cursor: pointer;">יציאה</button>
+    </div>
+
+    <input type="text" id="searchInput" placeholder="חיפוש לפי שם אורח, רכב או טלפון...">
+
+    <table id="parkingTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>שם האורח</th>
+                <th>מספר רכב</th>
+                <th>טלפון</th>
+                <th>תאריך</th>
+                <th>שעת התחלה</th>
+                <th>שעת סיום</th>
+                <th>מייל עובד</th>
+                <th>סטטוס</th>
+                <th>פעולות</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+<tr class="pending">
+    <td>1</td>
+    <td>יוסי כהן</td>
+    <td>1234567</td>
+    <td>050-1234567</td>
+    <td>2025-04-15</td>
+    <td>09:00</td>
+    <td>11:00</td>
+    <td>yossi@fibernet.co.il</td>
+    <td>ממתין</td>
+    <td>
+        <button class="approve-btn" onclick="approveRequest(this)">אשר</button>
+        <button class="reject-btn" onclick="rejectRequest(this)">דחה</button>
+    </td>
+</tr>
+<tr class="pending">
+    <td>2</td>
+    <td>נועה לוי</td>
+    <td>7654321</td>
+    <td>052-7654321</td>
+    <td>2025-04-16</td>
+    <td>10:00</td>
+    <td>12:00</td>
+    <td>noa@fibernet.co.il</td>
+    <td>ממתין</td>
+    <td>
+        <button class="approve-btn" onclick="approveRequest(this)">אשר</button>
+        <button class="reject-btn" onclick="rejectRequest(this)">דחה</button>
+    </td>
+</tr>
+<tr class="pending">
+    <td>3</td>
+    <td>דני ישראלי</td>
+    <td>9988776</td>
+    <td>053-9988776</td>
+    <td>2025-04-17</td>
+    <td>13:30</td>
+    <td>15:00</td>
+    <td>dani@fibernet.co.il</td>
+    <td>ממתין</td>
+    <td>
+        <button class="approve-btn" onclick="approveRequest(this)">אשר</button>
+        <button class="reject-btn" onclick="rejectRequest(this)">דחה</button>
+    </td>
+</tr>
+
+        </tbody>
+    </table>
+
+    <button class="export">ייצוא לאקסל</button>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
