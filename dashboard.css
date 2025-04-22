@@ -1,0 +1,67 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #003366;
+}
+
+.logo {
+    height: 40px;
+}
+
+#logoutBtn {
+    background-color: #3399ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #003366;
+}
+
+#searchInput {
+    display: block;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #cce6ff;
+}
+
+.approved {
+    background-color: #d4edda;
+}
+
+.rejected {
+    background-color: #f8d7da;
+}
